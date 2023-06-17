@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TunetLibs\ClassMetadata;
+namespace TunetLibs\PhpClassMetadata;
 
 final readonly class ClassMetadata
 {

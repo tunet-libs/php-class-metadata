@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace TunetLibs\ClassMetadata;
+namespace TunetLibs\PhpClassMetadata;
 
 use ReflectionClass;
 use ReflectionException;
 use ReflectionProperty;
-use TunetLibs\ClassMetadata\Metadata\PropertyMetadataFactory;
+use TunetLibs\PhpClassMetadata\Metadata\PropertyMetadataFactory;
 
 use function array_map;
 use function class_exists;

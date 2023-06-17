@@ -11,12 +11,12 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "TunetLibs\\ClassMetadata\\": "src/"
+            "TunetLibs\\PhpClassMetadata\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TunetLibs\\ClassMetadata\\Tests\\": "src/"
+            "TunetLibs\\PhpClassMetadata\\Tests\\": "src/"
         }
     },
     "require": {

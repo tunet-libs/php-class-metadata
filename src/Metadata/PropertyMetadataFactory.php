@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace TunetLibs\ClassMetadata\Metadata;
+namespace TunetLibs\PhpClassMetadata\Metadata;
 
 use ReflectionException;
 use ReflectionNamedType;
 use ReflectionProperty;
-use TunetLibs\ClassMetadata\ClassMetadataException;
-use TunetLibs\ClassMetadata\PropertyMetadata;
-use TunetLibs\ClassMetadata\VisibilityEnum;
+use TunetLibs\PhpClassMetadata\ClassMetadataException;
+use TunetLibs\PhpClassMetadata\PropertyMetadata;
+use TunetLibs\PhpClassMetadata\VisibilityEnum;
 
 /**
  * @internal
