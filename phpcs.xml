@@ -13,7 +13,9 @@
         <exclude name="Squiz.Arrays.ArrayDeclaration.SingleLineNotAllowed"/>
     </rule>
 
-    <config name="installed_paths" value="../../slevomat/coding-standard,../../escapestudios/symfony2-coding-standard/Symfony"/>
+    <config name="installed_paths"
+            value="../../slevomat/coding-standard,../../escapestudios/symfony2-coding-standard/Symfony"
+    />
 
     <rule ref="Symfony.Formatting.BlankLineBeforeReturn"/>
 
@@ -40,7 +42,7 @@
             <property name="allowFullyQualifiedNameForCollidingClasses" value="true"/>
             <property name="allowFullyQualifiedNameForCollidingConstants" value="true"/>
             <property name="allowFullyQualifiedNameForCollidingFunctions" value="true"/>
-            <property name="searchAnnotations" value="true"/>
+            <property name="searchAnnotations" value="false"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireYodaComparison"/>

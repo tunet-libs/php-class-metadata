@@ -6,6 +6,6 @@ declare(strict_types=1);
 namespace ${NAMESPACE};
 
 #end
-final class ${NAME}
+final readonly class ${NAME}
 {
 }

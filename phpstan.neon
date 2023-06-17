@@ -3,3 +3,6 @@ parameters:
 	paths:
 		- src
 	tmpDir: var
+	featureToggles:
+		bleedingEdge: true
+		readOnlyByPhpDoc: true
