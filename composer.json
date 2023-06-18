@@ -16,7 +16,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "TunetLibs\\PhpClassMetadata\\Tests\\": "src/"
+            "TunetLibs\\PhpClassMetadata\\Tests\\": "tests/"
         }
     },
     "require": {
