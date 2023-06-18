@@ -1,1 +1,1 @@
-# class-metadata
+# php-class-metadata
