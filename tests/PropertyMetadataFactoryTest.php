@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace TunetLibs\PhpClassMetadata\Tests;
 
 use PHPUnit\Framework\TestCase;
+use TunetLibs\PhpClassMetadata\ClassMetadataException;
 use TunetLibs\PhpClassMetadata\PropertyMetadataFactory;
 use TunetLibs\PhpClassMetadata\Tests\Fixtures\ReadonlyUser;
 use TunetLibs\PhpClassMetadata\Tests\Fixtures\User;
@@ -56,6 +57,22 @@ final class PropertyMetadataFactoryTest extends TestCase
 
         $propertyMetadata = $this->propertyMetadataFactory->get(User::class, 'isAdmin');
         self::assertFalse($propertyMetadata->isReadonly);
+    }
+
+    public function testNotExistsProperty(): void
+    {
+        $className = User::class;
+        $this->expectException(ClassMetadataException::class);
+        $this->expectExceptionMessage("Unhandled class '{$className}' exception.");
+        $this->propertyMetadataFactory->get($className, 'notExistsProperty');
+    }
+
+    public function testNotExistsClass(): void
+    {
+        $className = 'NotExistsClass';
+        $this->expectException(ClassMetadataException::class);
+        $this->expectExceptionMessage("Unhandled class '{$className}' exception.");
+        $this->propertyMetadataFactory->get($className, 'someProperty');
     }
 
     protected function setUp(): void

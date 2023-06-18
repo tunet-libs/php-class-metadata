@@ -34,6 +34,9 @@ ARG LINUX_USER_ID
 RUN addgroup --gid $LINUX_USER_ID docker \
     && adduser --uid $LINUX_USER_ID --ingroup docker --home /home/docker --shell /bin/zsh --disabled-password --gecos "" docker
 
+RUN mkdir 0777 /opt/phpstorm-coverage \
+    && chown $LINUX_USER_ID. /opt/phpstorm-coverage
+
 USER $LINUX_USER_ID
 
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/65a1e4edbe678cdac37ad96ca4bc4f6d77e27adf/tools/install.sh -O - | zsh
