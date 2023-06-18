@@ -7,7 +7,6 @@ namespace TunetLibs\PhpClassMetadata;
 use ReflectionClass;
 use ReflectionException;
 use ReflectionProperty;
-use TunetLibs\PhpClassMetadata\Metadata\PropertyMetadataFactory;
 
 use function array_map;
 use function class_exists;

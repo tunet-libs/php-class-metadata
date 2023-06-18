@@ -2,18 +2,12 @@
 
 declare(strict_types=1);
 
-namespace TunetLibs\PhpClassMetadata\Metadata;
+namespace TunetLibs\PhpClassMetadata;
 
 use ReflectionException;
 use ReflectionNamedType;
 use ReflectionProperty;
-use TunetLibs\PhpClassMetadata\ClassMetadataException;
-use TunetLibs\PhpClassMetadata\PropertyMetadata;
-use TunetLibs\PhpClassMetadata\VisibilityEnum;
 
-/**
- * @internal
- */
 final readonly class PropertyMetadataFactory
 {
     /**
