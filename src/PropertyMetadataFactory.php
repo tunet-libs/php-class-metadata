@@ -28,12 +28,13 @@ final readonly class PropertyMetadataFactory
         $type = $reflectionType instanceof ReflectionNamedType ? $reflectionType->getName() : null;
         $isNullable = $reflectionType?->allowsNull() ?? true;
         $isStatic = $reflectionProperty->isStatic();
+        $isReadonly = $reflectionProperty->isReadOnly();
         $visibility = match (true) {
             $reflectionProperty->isPrivate() => VisibilityEnum::PRIVATE,
             $reflectionProperty->isProtected() => VisibilityEnum::PROTECTED,
             default => VisibilityEnum::PUBLIC,
         };
 
-        return new PropertyMetadata($className, $propertyName, $type, $isNullable, $isStatic, $visibility);
+        return new PropertyMetadata($className, $propertyName, $type, $isNullable, $isStatic, $isReadonly, $visibility);
     }
 }

@@ -20,6 +20,7 @@ final readonly class PropertyMetadata
         public ?string $type,
         public bool $isNullable,
         public bool $isStatic,
+        public bool $isReadonly,
         public VisibilityEnum $visibility,
     ) {
         $this->className = $className;
